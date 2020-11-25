@@ -10,5 +10,11 @@ export class LoginListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
+  
+  refresh(ev) {
+    setTimeout(() => {
+      ev.detail.complete();
+    }, 3000);
+  }
 
 }

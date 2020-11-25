@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 
 export interface Message {
   fromName: string;
-  subject: string;
-  date: string;
+  description: string;
+  pay: number;
   id: number;
   read: boolean;
 }
@@ -14,59 +14,59 @@ export interface Message {
 export class DataService {
   public messages: Message[] = [
     {
-      fromName: 'Matt Chorsey',
-      subject: 'New event: Trip to Vegas',
-      date: '9:32 AM',
+      fromName: 'Alisamento',
+      description: 'Passar os produtos de alisamento e alisar os cabelos.',
       id: 0,
+      pay: 30,
       read: false
     },
     {
-      fromName: 'Lauren Ruthford',
-      subject: 'Long time no chat',
-      date: '6:12 AM',
+      fromName: 'Manicure',
+      description: 'Long time no chat',
       id: 1,
+      pay: 30,
       read: false
     },
     {
-      fromName: 'Jordan Firth',
-      subject: 'Report Results',
-      date: '4:55 AM',
+      fromName: 'Pedecure',
+      description: 'Report Results',
       id: 2,
+      pay: 30,
       read: false
     },
     {
-      fromName: 'Bill Thomas',
-      subject: 'The situation',
-      date: 'Yesterday',
+      fromName: 'Moicano',
+      description: 'The situation',
       id: 3,
+      pay: 30,
       read: false
     },
     {
-      fromName: 'Joanne Pollan',
-      subject: 'Updated invitation: Swim lessons',
-      date: 'Yesterday',
+      fromName: 'Cabelo Blindado',
+      description: 'Updated invitation: Swim lessons',
       id: 4,
+      pay: 30,
       read: false
     },
     {
-      fromName: 'Andrea Cornerston',
-      subject: 'Last minute ask',
-      date: 'Yesterday',
+      fromName: 'Corte Social',
+      description: 'Last minute ask',
       id: 5,
+      pay: 30,
       read: false
     },
     {
-      fromName: 'Moe Chamont',
-      subject: 'Family Calendar - Version 1',
-      date: 'Last Week',
+      fromName: 'Corte Tradicional',
+      description: 'Family Calendar - Version 1',
       id: 6,
+      pay: 30,
       read: false
     },
     {
       fromName: 'Kelly Richardson',
-      subject: 'Placeholder Headhots',
-      date: 'Last Week',
+      description: 'Placeholder Headhots',
       id: 7,
+      pay: 30,
       read: false
     }
   ];
