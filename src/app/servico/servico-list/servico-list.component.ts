@@ -1,5 +1,5 @@
-import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 import { Component, OnInit } from '@angular/core';
+import { DataService, Message } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-servico-list',
@@ -7,11 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servico-list.component.scss'],
 })
 export class ServicoListComponent implements OnInit {
-  data: Date;
+  constructor(private data: DataService) {}
 
-  constructor() { }
-
-  ngOnInit() {}
   refresh(ev) {
     setTimeout(() => {
       ev.detail.complete();
@@ -22,4 +19,5 @@ export class ServicoListComponent implements OnInit {
     return this.data.getMessages();
   }
 
+  ngOnInit() {}
 }
