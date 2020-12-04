@@ -6,6 +6,7 @@ import { DataService, Message } from 'src/app/services/data.service';
   templateUrl: './servico-list.component.html',
   styleUrls: ['./servico-list.component.scss'],
 })
+
 export class ServicoListComponent implements OnInit {
   constructor(private data: DataService) {}
 
