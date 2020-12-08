@@ -1,10 +1,26 @@
 <ion-label>
   <ion-item>
-    <ion-label>Time</ion-label>
+    <ion-label>DATA</ion-label>
     <ion-datetime displayFormat="hh-mm-A" display-timezone="America/Sao_Paulo"></ion-datetime>
   </ion-item>
   <ion-item>
     <ion-label>ESCOLHER HORAS</ion-label>
     <ion-datetime display-format="HH:mm" display-timezone="America/Sao_Paulo"></ion-datetime>
   </ion-item>
+  <ion-item>
+    <ion-label>SERVIÇO</ion-label>
+    <ion-select placeholder="Serviços" [(ngModel)]="selected_value" (ionChange)="obterFuncionario()">
+      <ion-select-option *ngFor="let servico of servicos" [value]="servico.id">{{servico.nome}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>FUNCIONÁRIO</ion-label>
+    <ion-select placeholder="Funcionário">
+      <ion-select-option></ion-select-option>
+    </ion-select>
+  </ion-item>
+  <br>
+  <br>
+  <br>
+  <ion-button class="mt-10" size="large" expand="block">SALVAR</ion-button>
 </ion-label>
